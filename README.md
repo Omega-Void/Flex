@@ -1,6 +1,11 @@
 # Flex [![Build Status](https://travis-ci.org/alexandrevicenzi/Flex.svg?branch=master)](https://travis-ci.org/alexandrevicenzi/Flex)
 
+This repository is merely a fork of the original Flex repo with some minor changes to make it fit my blog. If you like the changes feel free to use it, but I really recommend you go and pay alexandrevicenzi a visit and grab the original.
+
+
 The minimalist [Pelican](http://blog.getpelican.com/) theme.
+
+
 
 ## Notes
 
