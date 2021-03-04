@@ -18,8 +18,6 @@ PATH = "content"
 OUTPUT_PATH = "blog/"
 TIMEZONE = "America/New_York"
 
-DISABLE_URL_HASH = True
-
 # PLUGIN_PATHS = ['pelican-plugins']
 
 # PLUGINS = ['i18n_subsites']
@@ -57,11 +55,9 @@ MENUITEMS = (
 )
 
 CC_LICENSE = {
-    "name": "Creative Commons Attribution-ShareAlike 4.0 International License",
+    "name": "Creative Commons Attribution-ShareAlike",
     "version": "4.0",
     "slug": "by-sa",
-    "icon": True,
-    "language": "en_US",
 }
 
 COPYRIGHT_YEAR = datetime.now().year

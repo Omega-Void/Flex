@@ -1,6 +1,6 @@
 <p>
 {{
-  _('Built with %(pelican_url)s using %(flex_url)s theme',
+  _('Built with %(pelican_url)s using a modified %(flex_url)s theme',
     pelican_url='<a href="http://getpelican.com" target="_blank">Pelican</a>',
     flex_url='<a href="http://bit.ly/flex-pelican" target="_blank">Flex</a>'|safe)
 }}
@@ -20,3 +20,6 @@
   </script>
 {% endif %}
 </p>
+<div class="badge">
+  <script src="{{ BADGE }}"></script>
+</div>

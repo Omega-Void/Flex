@@ -102,10 +102,6 @@
   {% if GOOGLE_ANALYTICS %}
     {% include "partial/ga.html" %}
   {% endif %}
-  
-  {% if GOOGLE_GLOBAL_SITE_TAG %}
-    {% include "partial/ggst.html" %}
-  {% endif %}
 
   {% if BROWSER_COLOR %}
     <!-- Chrome, Firefox OS and Opera -->
@@ -152,9 +148,6 @@
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm.html" %}
   {% endif %}
-  {% if MICROSOFT_CLARITY %}
-    {% include "partial/clarity.html" %}
-  {% endif %}
 </head>
 <body {% if not THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE %}class="{{ THEME_COLOR|default('light') }}-theme"{% endif %}>
   {% if GOOGLE_TAG_MANAGER %}
@@ -182,7 +175,7 @@
         </form>
       {% endif %}
 
-      {% if pages or LINKS %}
+      {% if pages and LINKS %}
       <nav>
         <ul class="list">
           {# Open links in new window depending on the LINKS_IN_NEW_TAB setting #}
@@ -229,6 +222,7 @@
           </li>
         {% endfor %}
       </ul>
+
     </div>
 
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.aside %}
@@ -260,13 +254,13 @@
       <a href="{{ link }}">{{ _(title) }}</a>
       {% endfor %}
 
-      {% if FEED_ALL_ATOM %}
+     <!-- {% if FEED_ALL_ATOM %}
       <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}">{{ _('Atom') }}</a>
       {% endif %}
 
       {% if FEED_ALL_RSS %}
       <a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}">{{ _('RSS') }}</a>
-      {% endif %}
+      {% endif %}-->
     </nav>
     {% endif %}
 
